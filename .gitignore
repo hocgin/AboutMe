@@ -1,7 +1,4 @@
-# Created by .ignore support plugin (hsz.mobi)
+.DS_Store
+node_modules/
 .idea/
-iPage.iml
-node_modules
-dist/static/
-yarn-error.log
-yarn.lock
+*.iml
