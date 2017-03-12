@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <div class="show-box">
       <iHeader></iHeader>
       <iHr _color="#CBCBCB"></iHr>
       <!--<iButton _title="500PX" _icon="fa-camera-retro fa-lg"></iButton>-->
@@ -9,8 +8,6 @@
       <iHr _color="#CBCBCB"></iHr>
       <iProject></iProject>
       <iButton2Group></iButton2Group>
-      <br>
-    </div>
   </div>
 </template>
 
@@ -45,12 +42,13 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    height: 900px;
-  }
-  .show-box {
-    width: 300px;
-    margin: 0 auto;
     box-shadow: 0 0 5px #888;
+    margin: .5em auto 1em;
+    padding-bottom: 1em;
+
+    max-width: 335px;
+    min-width: 335px;
+    background-color: #fff;
   }
 
   * {
