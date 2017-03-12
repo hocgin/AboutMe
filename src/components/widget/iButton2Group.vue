@@ -20,13 +20,13 @@
 
 <style lang="scss" scoped>
   .iButton2Group {
-    margin-left: 1em;
-    margin-right: 1em;
     .ibutton2 {
       width: 50%;
       text-align: left;
       margin-top: .45em;
       margin-bottom: .45em;
+      box-sizing: border-box;
+      padding-left: 1.45em;
     }
   }
 </style>
