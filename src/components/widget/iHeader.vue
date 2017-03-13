@@ -61,7 +61,7 @@
 </style>
 <script>
   import holderjs from 'holderjs'
-  console.log(holderjs)
+  console.log(holderjs) // todo 后期移至 watch 方法中
   export default {
     name: 'iHeader',
     props: {
