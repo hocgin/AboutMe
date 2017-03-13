@@ -1,10 +1,10 @@
 <template>
   <div class="iProject">
     <div class="photo">
-      <img src="../../assets/logo.png" alt="">
+      <img :src="_src" alt="">
       <div class="info">
-        <p class="name">The Project</p>
-        <p class="version">Version 1.0</p>
+        <p class="name">{{ _title }}</p>
+        <p class="version">{{ _version }}</p>
       </div>
     </div>
   </div>
@@ -16,14 +16,14 @@
           img {
             background-color: #000;
             border: solid 2px #fff;
-            width: 70px;
-            height: 70px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
           }
           .info {
             display: inline-block;
             position: relative;
-            top: -20px;
+            top: -10px;
             margin-left: .4em;
             .name {
               font-weight: bolder;
@@ -37,7 +37,21 @@
       }
   }
 </style>
-<!--
-210
- 75
--->
+<script>
+  export default {
+    name: 'iProject',
+    props: {
+      _src: {
+        type: String
+      },
+      _title: {
+        type: String,
+        default: 'Project Name'
+      },
+      _version: {
+        type: String,
+        default: 'Version 1.0'
+      }
+    }
+  }
+</script>
