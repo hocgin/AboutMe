@@ -1,7 +1,7 @@
 <template>
   <div class="iProject">
     <div class="photo">
-      <img :src="_src" alt="">
+      <img :src="_photo" data-src="holder.js/50x50" alt="">
       <div class="info">
         <p class="name">{{ _title }}</p>
         <p class="version">{{ _version }}</p>
@@ -14,7 +14,6 @@
       margin-top: .9em;
       .photo {
           img {
-            background-color: #000;
             border: solid 2px #fff;
             width: 50px;
             height: 50px;
@@ -41,7 +40,7 @@
   export default {
     name: 'iProject',
     props: {
-      _src: {
+      _photo: {
         type: String
       },
       _title: {

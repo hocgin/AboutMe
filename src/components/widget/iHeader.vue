@@ -3,7 +3,7 @@
     <div class="top">
     </div>
     <div class="photo">
-      <img src="../../assets/photo.png" alt="photo">
+      <img :src="_photo" data-src="holder.js/70x70" alt="photo">
     </div>
     <div class="info">
       <p class="name">{{ _nick }}</p>
@@ -60,6 +60,8 @@
   }
 </style>
 <script>
+  import holderjs from 'holderjs'
+  console.log(holderjs)
   export default {
     name: 'iHeader',
     props: {
@@ -74,6 +76,10 @@
       _brief: {
         type: String,
         default: 'The best preparation for tomorrow is doing your best today.'
+      },
+      _photo: {
+        type: String,
+        default: 'holder.js/70x70'
       }
     }
   }

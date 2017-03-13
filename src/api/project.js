@@ -1,5 +1,5 @@
 const _data = [{
-  'photo': '',
+  'photo': 'none',
   'name': 'Weather For Mac',
   'version': 'Version 1.0.1',
   'icons': [
@@ -38,7 +38,7 @@ const _data = [{
     }
   ]
 }, {
-  'photo': '',
+  'photo': 'none',
   'name': 'Weather For Mac2',
   'version': 'Version 1.0.2',
   'icons': [
