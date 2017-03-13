@@ -1,6 +1,6 @@
 <template>
   <div class="iProjectPanel">
-    <iProject :_title="_project.name" :_version="_project.version" _src="https://cn.vuejs.org/images/logo.png"></iProject>
+    <iProject :_title="_project.name" :_version="_project.version" _photo="_project.photo"></iProject>
     <div class="iButton2Panel">
       <template v-for="item in _project.icons">
         <iButton2 class="iButton2" :_title="item.title" :_icon="item.icon" :_href="item.href"></iButton2>

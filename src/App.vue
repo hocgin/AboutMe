@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <iHeader :_nick="info.nick" :_subtitle="info.subtitle" :_brief="info.brief"></iHeader>
+    <iHeader :_nick="info.nick" :_subtitle="info.subtitle" :_brief="info.brief" :_photo="info.photo"></iHeader>
     <iHr _color="#CBCBCB"></iHr>
     <!--<iButton _title="500PX" _icon="fa-camera-retro fa-lg"></iButton>-->
     <!--<iButton2 _title="500PX" _icon="fa-camera-retro fa-lg"></iButton2>-->
