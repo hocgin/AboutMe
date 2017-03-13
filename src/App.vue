@@ -1,34 +1,32 @@
 <template>
   <div id="app">
-      <iHeader></iHeader>
-      <iHr _color="#CBCBCB"></iHr>
-      <!--<iButton _title="500PX" _icon="fa-camera-retro fa-lg"></iButton>-->
-      <!--<iButton2 _title="500PX" _icon="fa-camera-retro fa-lg"></iButton2>-->
-      <iButtonGroup></iButtonGroup>
-      <iHr _color="#CBCBCB"></iHr>
-      <iProject></iProject>
-      <iButton2Group></iButton2Group>
+    <iHeader :_nick="info.nick" :_subtitle="info.subtitle" :_brief="info.brief"></iHeader>
+    <iHr _color="#CBCBCB"></iHr>
+    <!--<iButton _title="500PX" _icon="fa-camera-retro fa-lg"></iButton>-->
+    <!--<iButton2 _title="500PX" _icon="fa-camera-retro fa-lg"></iButton2>-->
+    <iPanel></iPanel>
+    <!--<iHr _color="#CBCBCB"></iHr>-->
+    <!--<iProject></iProject>-->
+    <!--<iButton2Group></iButton2Group>-->
   </div>
 </template>
 
 <script>
-  import iButton from '@/components/widget/iButton'
-  import iButton2 from '@/components/widget/iButton2'
   import iHr from '@/components/widget/iHr'
   import iHeader from '@/components/widget/iHeader'
-  import iButtonGroup from '@/components/widget/iButtonGroup'
-  import iButton2Group from '@/components/widget/iButton2Group'
-  import iProject from '@/components/widget/iProject'
+  import iPanel from '@/components/iPanel'
+
   export default {
     name: 'app',
     components: {
-      iButton,
-      iButton2,
       iHr,
       iHeader,
-      iButtonGroup,
-      iButton2Group,
-      iProject
+      iPanel
+    },
+    data () {
+      return {
+        info: this.$store.state.user
+      }
     }
   }
 </script>
@@ -43,11 +41,11 @@
     text-align: center;
     color: #2c3e50;
     box-shadow: 0 0 5px #888;
-    margin: .5em auto 1em;
-    padding-bottom: 1em;
-
+    margin: 5em auto 1em;
+    padding-bottom: .45em;
+    overflow: hidden;
     max-width: 335px;
-    min-width: 335px;
+    /*min-width: 250px;*/
     background-color: #fff;
   }
 

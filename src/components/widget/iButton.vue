@@ -34,10 +34,12 @@
     .link {
       text-decoration: none;
       color: #000;
-    }
-    .title {
-      margin-top: .2em;
-      font-size: .65em;
+      :hover{
+      }
+      .title {
+        margin-top: .2em;
+        font-size: .65em;
+      }
     }
   }
 
