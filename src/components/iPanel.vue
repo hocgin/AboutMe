@@ -87,12 +87,6 @@
       },
       callback: function (params) {
         console.log(params)
-      },
-      get2Bit: function (v) {
-        return String(v).length < 2 ? '0' + v : v
-      },
-      time2color: function (date) {
-        return `rgba(${this.get2Bit(date.getHours())}, ${this.get2Bit(date.getMinutes())}, ${this.get2Bit(date.getSeconds())}, .2)`
       }
     },
     data () {
@@ -100,11 +94,6 @@
         project: this.$store.state.project,
         icons: this.$store.state.icon
       }
-    },
-    created () {
-      window.setInterval(() => {
-//        $('body').css({'background-color': this.time2color(new Date())})
-      }, 1000)
     }
   }
 
