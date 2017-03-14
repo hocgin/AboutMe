@@ -1,14 +1,14 @@
 <template>
   <div class="iPanel">
-    <div class="slider">
-      <div class="box">
-        <iButtonPanel :_icons="icons"></iButtonPanel>
-      </div>
+    <div class="slider" v-tap="{ methods : callback }">
       <template v-for="item in project">
         <div class="box">
           <iProjectPanel :_project="item"></iProjectPanel>
         </div>
       </template>
+      <div class="box">
+        <iButtonPanel :_icons="icons"></iButtonPanel>
+      </div>
     </div>
     <ul class="slider-nav">
       <li v-for="(item, index) in project.length + 1">
@@ -18,13 +18,22 @@
   </div>
 </template>
 <style lang="scss" scoped>
+  $boxWidth: 335px;
+  $boxHeight: 210px;
+  $boxNumber: 3;
+
   .iPanel {
     .slider {
       margin-top: 1em;
+      width: $boxWidth * $boxNumber;
+      height: $boxHeight;
+      position: relative;
       .box {
-        height: 205px;
+        height: $boxHeight;
+        width: $boxWidth;
+        float: right;
         &:not(:first-child) {
-            display: none;
+            /*display: none;*/
          }
       }
     }
@@ -72,8 +81,11 @@
         if (!$this.hasClass('active')) {
           $('.slider-nav .bullet.active').removeClass('active')
           $this.addClass('active')
-          $('.box').css('display', 'none').eq($this.data('index')).css('display', 'block')
+          $('.slider').animate({'left': -335 * $this.data('index') + 'px'})
         }
+      },
+      callback: function (params) {
+        console.log(params)
       }
     },
     data () {
