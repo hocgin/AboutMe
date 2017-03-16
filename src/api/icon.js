@@ -1,18 +1,18 @@
 const _data = [
   {
-    'icon': 'fa-camera-retro fa-lg',
+    'icon': 'fa-home fa-lg',
     'href': 'http://hocg.in',
-    'title': '500px'
+    'title': 'Home'
   },
   {
-    'icon': 'fa-camera-retro fa-lg',
+    'icon': 'fa-weibo fa-lg',
     'href': 'http://hocg.in',
-    'title': '500px'
+    'title': '微博'
   },
   {
-    'icon': 'fa-camera-retro fa-lg',
+    'icon': 'fa-github fa-lg',
     'href': 'http://hocg.in',
-    'title': '500px'
+    'title': 'GitHub'
   },
   {
     'icon': 'fa-camera-retro fa-lg',
