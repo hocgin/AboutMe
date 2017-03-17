@@ -16,8 +16,8 @@ const _data = [
   },
   {
     'icon': 'fa-camera-retro fa-lg',
-    'href': 'http://hocg.in',
-    'title': '500px'
+    'href': 'https://www.zhihu.com/people/hocgin',
+    'title': '知乎'
   },
   {
     'icon': 'fa-camera-retro fa-lg',
