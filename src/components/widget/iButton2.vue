@@ -1,7 +1,7 @@
 <template>
   <div class="iButton2">
     <a class="link" :href="_href" :target="_target">
-      <i class="fa" :class="_icon"></i>
+      <i v-html="_icon">{{ _icon }}</i>
       <span class="title"> {{ _title }}</span>
     </a>
   </div>
