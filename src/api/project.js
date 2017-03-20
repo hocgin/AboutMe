@@ -1,5 +1,5 @@
 const _data = [{
-  'photo': 'none',
+  'photo': 'https://raw.githubusercontent.com/hocgin/WeatherForChrome/master/screenshots/weather-chrome.png',
   'name': 'Weather For Mac',
   'version': 'Version 1.0.1',
   'icons': [
@@ -61,19 +61,19 @@ const _data = [{
     }, {
       'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
-      'title': '500px'
+      'title': 'Share'
     }, {
       'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
-      'title': '500px'
+      'title': 'Downloads'
     }, {
       'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
-      'title': '500px'
+      'title': 'Change Log'
     }, {
       'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
-      'title': '500px'
+      'title': 'Help'
     }
   ]
 }]
