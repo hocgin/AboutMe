@@ -4,35 +4,35 @@ const _data = [{
   'version': 'Version 1.0.1',
   'icons': [
     {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }
@@ -43,35 +43,35 @@ const _data = [{
   'version': 'Version 1.0.2',
   'icons': [
     {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }, {
-      'icon': 'fa-camera-retro fa-lg',
+      'icon': '<i class="fa fa-camera-retro fa-lg"></i>',
       'href': 'http://hocg.in',
       'title': '500px'
     }
