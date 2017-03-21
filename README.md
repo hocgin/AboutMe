@@ -1,6 +1,9 @@
-# i-page
+# iPage
 
-> A Vue.js project
+> VueJS
+
+## 展示
+[image](screenshorts/About.gif)
 
 ## Build Setup
 
