@@ -1,6 +1,6 @@
 <template>
   <div class="iPanel">
-    <div class="slider" v-tap="{ methods : callback }">
+    <div class="slider">
       <template v-for="item in project">
         <div class="box">
           <iProjectPanel :_project="item"></iProjectPanel>
@@ -84,9 +84,6 @@
           $this.addClass('active')
           $('.slider').animate({'left': -335 * $this.data('index') + 'px'})
         }
-      },
-      callback: function (params) {
-        console.log(params)
       }
     },
     data () {
