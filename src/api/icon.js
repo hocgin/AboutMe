@@ -61,7 +61,7 @@ const _data = [
   },
   {
     'icon': '<i class="animate-rotate-340">简历</i>',
-    'href': 'http://hocg.in/resume',
+    'href': 'http://vita.hocg.in/',
     'title': '简历'
   },
   {
