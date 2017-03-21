@@ -3,7 +3,7 @@
 > VueJS
 
 ## 展示
-[image](screenshorts/About.gif)
+![images](screenshorts/About.gif)
 
 ## Build Setup
 
