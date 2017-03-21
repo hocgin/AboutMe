@@ -12,7 +12,7 @@
     </div>
     <ul class="slider-nav">
       <li v-for="(item, index) in project.length + 1">
-        <a class="bullet" :class="{active: index == 0}" :data-index="index" href="#"
+        <a class="bullet" :class="{active: index == 0}" :data-index="index" :href="'#' + index"
            @mousemove.stop.prevent="eventMove"></a>
       </li>
     </ul>
