@@ -21,10 +21,10 @@
 <style lang="scss" scoped>
   $boxWidth: 335px;
   $boxHeight: 210px;
-  $boxNumber: 3;
 
   .iPanel {
     .slider {
+      /* 335px * number*/
       margin-top: 1em;
       height: $boxHeight;
       position: relative;
