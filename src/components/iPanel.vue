@@ -1,6 +1,6 @@
 <template>
   <div class="iPanel">
-    <div class="slider">
+    <div class="slider" :style="{ width: slider_width }">
       <template v-for="item in project">
         <div class="box">
           <iProjectPanel :_project="item"></iProjectPanel>
@@ -26,7 +26,6 @@
   .iPanel {
     .slider {
       margin-top: 1em;
-      width: $boxWidth * $boxNumber;
       height: $boxHeight;
       position: relative;
       .box {
@@ -89,7 +88,8 @@
     data () {
       return {
         project: this.$store.state.project,
-        icons: this.$store.state.icon
+        icons: this.$store.state.icon,
+        slider_width: (!this.$store.state.project.length ? 1 : (this.$store.state.project.length + 1)) * 335 + 'px'
       }
     }
   }
