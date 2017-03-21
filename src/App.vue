@@ -15,6 +15,7 @@
   import iHr from '@/components/widget/iHr'
   import iHeader from '@/components/widget/iHeader'
   import iPanel from '@/components/iPanel'
+  import $ from 'jquery'
 
   export default {
     name: 'app',
@@ -29,13 +30,30 @@
       }
     }
   }
+
+  // 切换标题
+  let c
+  let u = document.title
+  document.addEventListener('visibilitychange', function () {
+    document.hidden ? ($('[rel="shortcut icon"]').attr('href', 'https://hocg.in/fail.ico'),
+        document.title = '(●—●)喔哟，崩溃啦！',
+        clearTimeout(c)) : ($('[rel="shortcut icon"]').attr('href', 'https://hocg.in/favicon.ico?v=0.5.0'),
+        document.title = '(/≧▽≦/)咦！又好了！' + u,
+        c = setTimeout(function () {
+          document.title = u
+        }, 2e3))
+  })
 </script>
 
 <style lang="scss">
   @import "./assets/font-awesome-4.7.0/css/font-awesome.css";
+  @import "./assets/app.scss";
+
+  * {
+    font-family: "Avenir Next",Helvetica,Arial,"Lantinghei SC","Microsoft YaHei",sans-serif;
+  }
 
   #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -52,5 +70,6 @@
   * {
     margin: 0;
     padding: 0;
+    cursor: url('https://hocg.in/mouse.png'), auto;
   }
 </style>

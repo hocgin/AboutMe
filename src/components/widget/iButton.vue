@@ -34,15 +34,13 @@
     .link {
       text-decoration: none;
       color: #000;
-      :hover{
-      }
       .title {
         margin-top: .2em;
         font-size: .65em;
+        font-weight: 500;
       }
     }
   }
-
 
 </style>
 <!--

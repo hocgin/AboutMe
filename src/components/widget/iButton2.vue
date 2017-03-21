@@ -1,8 +1,8 @@
 <template>
   <div class="iButton2">
     <a class="link" :href="_href" :target="_target">
-      <i v-html="_icon">{{ _icon }}</i>
-      <span class="title"> {{ _title }}</span>
+      <i v-html="_icon">{{ _icon }}</i>&nbsp;&nbsp;
+      <span class="title transition-font"> {{ _title }}</span>
     </a>
   </div>
 </template>
@@ -34,9 +34,11 @@
     .link {
       text-decoration: none;
       color: #000;
-    }
-    .title {
-      font-size: .65em;
+
+      .title {
+        font-size: .75em;
+        font-weight: 500;
+      }
     }
   }
 
