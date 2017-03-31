@@ -46,9 +46,6 @@
 </script>
 
 <style lang="scss">
-  @import "./assets/font-awesome-4.7.0/css/font-awesome.css";
-  @import "./assets/app.scss";
-
   * {
     font-family: "Avenir Next",Helvetica,Arial,"Lantinghei SC","Microsoft YaHei",sans-serif;
   }
