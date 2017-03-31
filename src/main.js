@@ -4,9 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store/index'
+// 引入js
 import holderjs from 'holderjs'
+// 引入 css/scss
+import appScss from './assets/app.scss'
+import fontAwesomeCss from './assets/font-awesome-4.7.0/css/font-awesome.css'
 // 防 error
-console.log(holderjs)
+console.log(holderjs, appScss, fontAwesomeCss)
 
 Vue.config.productionTip = false
 
