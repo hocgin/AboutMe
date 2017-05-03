@@ -14,6 +14,12 @@
   }
 }
 
+
+.project-icon:hover {
+  animation: 1s jello forwards;
+}
+
+
 // 下划线
 .transition-font {
   line-height: 1.2;

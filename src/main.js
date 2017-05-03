@@ -8,9 +8,10 @@ import store from './store/index'
 import holderjs from 'holderjs'
 // 引入 css/scss
 import appScss from './assets/app.scss'
+import animateCss from './assets/animate.css'
 import fontAwesomeCss from './assets/font-awesome-4.7.0/css/font-awesome.css'
 // 防 error
-console.log(holderjs, appScss, fontAwesomeCss)
+console.log(holderjs, appScss, fontAwesomeCss, animateCss)
 
 Vue.config.productionTip = false
 

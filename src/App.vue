@@ -1,20 +1,28 @@
 <template>
-  <div id="app">
-    <iHeader :_nick="info.nick" :_subtitle="info.subtitle" :_brief="info.brief" :_photo="info.photo"></iHeader>
-    <iHr _color="#CBCBCB"></iHr>
-    <!--<iButton _title="500PX" _icon="fa-camera-retro fa-lg"></iButton>-->
-    <!--<iButton2 _title="500PX" _icon="fa-camera-retro fa-lg"></iButton2>-->
-    <iPanel></iPanel>
-    <!--<iHr _color="#CBCBCB"></iHr>-->
-    <!--<iProject></iProject>-->
-    <!--<iButton2Group></iButton2Group>-->
+  <div id="app" class="animated" :class="animateInClass">
+    <div class="app-box">
+      <iHeader :_nick="info.nick" :_subtitle="info.subtitle" :_brief="info.brief" :_photo="info.photo"></iHeader>
+      <transition
+        enter-active-class="animated bounceIn"
+      >
+        <div v-if="showMore">
+          <iHr _color="#CBCBCB"></iHr>
+          <iPanel></iPanel>
+        </div>
+      </transition>
+    </div>
+    <a @click.prevent="showMoreClick">
+      <iMore :_hidden="showMore"></iMore>
+    </a>
   </div>
+
 </template>
 
 <script>
   import iHr from '@/components/widget/iHr'
   import iHeader from '@/components/widget/iHeader'
   import iPanel from '@/components/iPanel'
+  import iMore from '@/components/widget/iMore'
   import $ from 'jquery'
 
   export default {
@@ -22,11 +30,32 @@
     components: {
       iHr,
       iHeader,
-      iPanel
+      iPanel,
+      iMore
+    },
+    methods: {
+      showMoreClick: function (event) {
+        this.showMore = !this.showMore
+        if (this.showMore) {
+          $('#app').animate({'margin-top': '4em'})
+        } else {
+          $('#app').animate({'margin-top': '12em'})
+        }
+      }
     },
     data () {
       return {
-        info: this.$store.state.user
+        info: this.$store.state.user,
+        showMore: false,
+        animateInClass: [
+          'flipInY',
+          'flipInX',
+          'bounceIn',
+          'fadeIn',
+          'rotateIn',
+          'rollIn',
+          'zoomIn'
+        ][Math.floor(Math.random() * 7)]
       }
     }
   }
@@ -47,21 +76,28 @@
 
 <style lang="scss">
   * {
-    font-family: "Avenir Next",Helvetica,Arial,"Lantinghei SC","Microsoft YaHei",sans-serif;
+    font-family: "Avenir Next", Helvetica, Arial, "Lantinghei SC", "Microsoft YaHei", sans-serif;
   }
 
   #app {
+
+    max-width: 335px;
+    margin: 10em auto 1em;
+
+  /*margin: 0 auto;*/
+
+  .app-box {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    box-shadow: 0 0 5px #888;
-    margin: 5em auto 1em;
+    box-shadow: 0 0 2px #888;
     padding-bottom: .45em;
     overflow: hidden;
-    max-width: 335px;
     /*min-width: 250px;*/
     background-color: #fff;
+  }
+
   }
 
   * {
@@ -69,4 +105,5 @@
     padding: 0;
     cursor: url('https://hocg.in/mouse.png'), auto;
   }
+
 </style>

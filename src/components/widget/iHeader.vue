@@ -26,12 +26,16 @@
     position: relative;
     top: -35px;
 
-  img {
-    border: solid 2px #fff;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-  }
+    img {
+      border: solid 2px #fff;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+
+      &:hover {
+         animation: 1s rubberBand forwards;
+       }
+    }
 
   }
   .info {
