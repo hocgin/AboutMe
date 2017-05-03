@@ -54,7 +54,6 @@
   }
 </style>
 <script>
-  import Vue from 'vue'
   import iButtonPanel from '@/components/iButtonPanel'
   import iProjectPanel from '@/components/iProjectPanel'
   import $ from 'jquery'
@@ -71,10 +70,6 @@
         let index = $this.data('index')
         if (index !== undefined) {
           this.$router.push({path: '/0/' + (index - 1)})
-          Vue.transition('bounce', {
-            enterClass: 'animated bounceInLeft',
-            leaveClass: 'animated bounceInRight'
-          })
         }
       }
     },
