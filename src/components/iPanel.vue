@@ -1,45 +1,33 @@
 <template>
   <div class="iPanel">
-    <div class="slider" :style="{ width: slider_width }">
-      <template v-for="item in project">
-        <div class="box">
-          <iProjectPanel :_project="item"></iProjectPanel>
-        </div>
-      </template>
-      <div class="box">
-        <iButtonPanel :_icons="icons"></iButtonPanel>
-      </div>
+    <div class="slider">
+      <transition mode="out-in"
+        enter-active-class="animated pulse" keep-alive>
+        <router-view name="panel" :key="key"></router-view>
+      </transition>
     </div>
     <ul class="slider-nav">
       <li v-for="(item, index) in project.length + 1">
-        <a class="bullet" :class="{active: index == 0}" :data-index="index" :href="'#' + index"
-           @mousemove.stop.prevent="eventMove"></a>
+        <router-link class="bullet" active-class="active" @mouseover.native="eventMove" :data-index="index" :to="'/0/' + (index - 1)"></router-link>
       </li>
     </ul>
   </div>
 </template>
 <style lang="scss" scoped>
-  $boxWidth: 335px;
+  /*$boxWidth: 335px;*/
   $boxHeight: 210px;
 
   .iPanel {
+    display: inline-block;
     .slider {
       /* 335px * number*/
       margin-top: 1em;
       height: $boxHeight;
-      position: relative;
-      .box {
-        height: $boxHeight;
-        width: $boxWidth;
-        float: right;
-        &:not(:first-child) {
-            /*display: none;*/
-         }
-      }
     }
 
     .slider-nav {
       text-align: center;
+      display: inline-block;
 
     li {
       display: inline;
@@ -54,6 +42,7 @@
           overflow: hidden;
           height: 5px;
           width: 5px;
+          cursor: pointer;
         }
 
         .bullet.active {
@@ -65,6 +54,7 @@
   }
 </style>
 <script>
+  import Vue from 'vue'
   import iButtonPanel from '@/components/iButtonPanel'
   import iProjectPanel from '@/components/iProjectPanel'
   import $ from 'jquery'
@@ -78,18 +68,24 @@
     methods: {
       eventMove: function (event) {
         let $this = $(event.target)
-        if (!$this.hasClass('active')) {
-          $('.slider-nav .bullet.active').removeClass('active')
-          $this.addClass('active')
-          $('.slider').animate({'left': -335 * $this.data('index') + 'px'})
+        let index = $this.data('index')
+        if (index !== undefined) {
+          this.$router.push({path: '/0/' + (index - 1)})
+          Vue.transition('bounce', {
+            enterClass: 'animated bounceInLeft',
+            leaveClass: 'animated bounceInRight'
+          })
         }
+      }
+    },
+    computed: {
+      key () {
+        return this.$route.path.replace(/\//g, '_')
       }
     },
     data () {
       return {
-        project: this.$store.state.project,
-        icons: this.$store.state.icon,
-        slider_width: (!this.$store.state.project.length ? 1 : (this.$store.state.project.length + 1)) * 335 + 'px'
+        project: this.$store.state.project
       }
     }
   }
