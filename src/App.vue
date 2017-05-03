@@ -78,10 +78,10 @@
   * {
     font-family: "Avenir Next", Helvetica, Arial, "Lantinghei SC", "Microsoft YaHei", sans-serif;
   }
-
   #app {
 
-    max-width: 335px;
+    /*max-width: 335px;*/
+    max-width: 410px;
     margin: 10em auto 1em;
 
   /*margin: 0 auto;*/

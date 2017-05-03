@@ -51,6 +51,16 @@
       margin-left: -47px;
       color: #6d757a;
       font-size: 12px;
+      &:hover {
+         /* 全部/收起 悬浮动画
+         color: #ffa565;*/
+          /*.iMore-icon-toggle-down {*/
+            /*background-position: -539px -732px;*/
+          /*}*/
+          /*.iMore-icon-toggle-up {*/
+            /*background-position: -538px -797px;*/
+          /*}*/
+       }
     }
     .iMore-icon {
       vertical-align: top;

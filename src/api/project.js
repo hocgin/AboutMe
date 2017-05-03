@@ -22,7 +22,7 @@ const _data = [{
     }, {
       'icon': '<i class="fa fa-lg fa-pencil project-icon"></i>',
       'href': 'https://github.com/hocgin/WeatherForMac/issues',
-      'title': '反馈'
+      'title': 'Q&A'
     }, {
       'icon': '<i class="fa fa-lg fa-terminal project-icon"></i>',
       'href': 'https://github.com/hocgin/WeatherForMac',
@@ -30,7 +30,7 @@ const _data = [{
     }, {
       'icon': '<i class="fa fa-lg fa-question-circle project-icon"></i>',
       'href': 'https://github.com/hocgin/WeatherForMac',
-      'title': '帮助'
+      'title': 'Help'
     }, {
       'icon': '<i class="fa fa-lg fa-gift project-icon"></i>',
       'href': 'https://github.com/hocgin/WeatherForMac',
@@ -61,7 +61,7 @@ const _data = [{
     }, {
       'icon': '<i class="fa fa-lg fa-pencil project-icon"></i>',
       'href': 'https://github.com/hocgin/WeatherForChrome/issues',
-      'title': '反馈'
+      'title': 'Q&A'
     }, {
       'icon': '<i class="fa fa-lg fa-terminal project-icon"></i>',
       'href': 'https://github.com/hocgin/WeatherForChrome',
@@ -69,7 +69,7 @@ const _data = [{
     }, {
       'icon': '<i class="fa fa-lg fa-question-circle project-icon"></i>',
       'href': 'https://github.com/hocgin/WeatherForChrome',
-      'title': '帮助'
+      'title': 'Help'
     }, {
       'icon': '<i class="fa fa-lg fa-gift project-icon"></i>',
       'href': 'https://github.com/hocgin/WeatherForChrome',

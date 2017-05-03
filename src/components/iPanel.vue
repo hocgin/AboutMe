@@ -14,15 +14,11 @@
   </div>
 </template>
 <style lang="scss" scoped>
-  /*$boxWidth: 335px;*/
-  $boxHeight: 210px;
-
   .iPanel {
     display: inline-block;
     .slider {
-      /* 335px * number*/
       margin-top: 1em;
-      height: $boxHeight;
+      min-height: 210px;
     }
 
     .slider-nav {
