@@ -1,8 +1,8 @@
 <template>
   <div class="iProjectPanel">
-    <iProject :_title="_project.name" :_version="_project.version" :_photo="_project.photo"></iProject>
+    <iProject :_title="project.name" :_version="project.version" :_photo="project.photo"></iProject>
     <div class="iButton2Panel">
-      <template v-for="item in _project.icons">
+      <template v-for="item in project.icons">
         <iButton2 class="iButton2" :_title="item.title" :_icon="item.icon" :_href="item.href"></iButton2>
       </template>
     </div>
@@ -18,7 +18,17 @@
       iProject,
       iButton2
     },
-    props: ['_project']
+    watch: {
+      $route () {
+        this.project = this.$store.state.project[this.$route.params.index]
+      }
+    },
+    data () {
+      return {
+        project: this.$store.state.project[this.$route.params.index],
+        icons: this.$store.state.icon
+      }
+    }
   }
 </script>
 <style lang="scss" scoped>
