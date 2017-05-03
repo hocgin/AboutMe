@@ -1,7 +1,7 @@
 <template>
   <div class="iButton">
     <a class="link" :href="_href" :target="_target">
-      <div v-html="_icon">{{ _icon }}</div>
+      <div class="icon" v-html="_icon">{{ _icon }}</div>
       <div class="title">{{ _title }}</div>
     </a>
   </div>
@@ -34,6 +34,9 @@
     .link {
       text-decoration: none;
       color: #000;
+      cursor: pointer;
+      display: inline-block;
+
       .title {
         margin-top: .2em;
         font-size: .65em;
