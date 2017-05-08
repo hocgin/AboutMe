@@ -1,9 +1,10 @@
 <template>
   <div class="iPanel">
     <div class="slider">
-      <transition mode="out-in"
-        enter-active-class="animated pulse" keep-alive>
-        <router-view name="panel" :key="key"></router-view>
+      <transition
+        :leave-active-class="activeLeave"
+        :enter-active-class="activeEnter" keep-alive>
+        <router-view class="panel" name="panel" :key="key"></router-view>
       </transition>
     </div>
     <ul class="slider-nav">
@@ -15,10 +16,15 @@
 </template>
 <style lang="scss" scoped>
   .iPanel {
-    display: inline-block;
+    display: block;
     .slider {
       margin-top: 1em;
       min-height: 210px;
+
+      position: relative;
+      .panel {
+        position: absolute;
+      }
     }
 
     .slider-nav {
@@ -60,6 +66,17 @@
       iButtonPanel,
       iProjectPanel
     },
+    watch: {
+      '$route' (to, from) {
+        if (to.path > from.path) { // oox
+          this.activeLeave = 'animated bounceOutRight'
+          this.activeEnter = 'animated bounceInLeft'
+        } else { // xoo
+          this.activeLeave = 'animated bounceOutLeft'
+          this.activeEnter = 'animated bounceInRight'
+        }
+      }
+    },
     methods: {
       eventMove: function (event) {
         let $this = $(event.target)
@@ -76,6 +93,8 @@
     },
     data () {
       return {
+        activeLeave: 'animated bounceOutRight',
+        activeEnter: 'animated bounceInLeft',
         project: this.$store.state.project
       }
     }
