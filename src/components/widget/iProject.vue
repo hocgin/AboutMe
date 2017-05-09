@@ -31,6 +31,8 @@
   .iProject {
     margin-top: .9em;
       .photo {
+          display: inline-block;
+          margin: 0 auto;
           img {
             border: solid 1px #eee;
             width: 50px;

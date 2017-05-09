@@ -1,12 +1,12 @@
 <template>
   <div class="iMore-toggle-block iMore">
     <div class="iMore-toggle-btn">
-      <div v-if="_hidden">
-        <span>收起</span>
+      <div class="cursor-pointer" v-if="_hidden">
+        <span class="cursor-pointer">收起</span>
         <i class="iMore-icon iMore-icon-toggle-up flash animated infinite"></i>
       </div>
-      <div v-else>
-        <span>全部</span>
+      <div class="cursor-pointer" v-else>
+        <span class="cursor-pointer">全部</span>
         <i class="iMore-icon iMore-icon-toggle-down flash animated infinite"></i>
       </div>
     </div>
@@ -74,12 +74,14 @@
     background: url(../../assets/icons.png) -474px -732px no-repeat;
     width: 12px;
     height: 10px;
+    cursor: pointer;
   }
 
   .iMore-icon.iMore-icon-toggle-up {
     background: url(../../assets/icons.png) -473px -797px no-repeat;
     width: 12px;
     height: 10px;
+    cursor: pointer;
   }
 
   .iMore-icon {
@@ -96,5 +98,8 @@
     width: 12px;
     height: 12px;
     background: url(../../assets/icons.png) no-repeat;
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
 </style>
