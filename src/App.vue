@@ -15,7 +15,6 @@
       <iMore :_hidden="showMore"></iMore>
     </a>
   </div>
-
 </template>
 
 <script>
