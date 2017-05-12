@@ -69,11 +69,11 @@
     watch: {
       '$route' (to, from) {
         if (to.path > from.path) { // oox
-          this.activeLeave = 'animated bounceOutRight'
-          this.activeEnter = 'animated bounceInLeft'
-        } else { // xoo
           this.activeLeave = 'animated bounceOutLeft'
           this.activeEnter = 'animated bounceInRight'
+        } else { // xoo
+          this.activeLeave = 'animated bounceOutRight'
+          this.activeEnter = 'animated bounceInLeft'
         }
       }
     },
