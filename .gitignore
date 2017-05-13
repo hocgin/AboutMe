@@ -2,3 +2,6 @@
 .idea/
 iPage.iml
 node_modules
+dist/static/
+yarn-error.log
+yarn.lock
