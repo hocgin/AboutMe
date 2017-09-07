@@ -34,11 +34,11 @@
 
   .iMore-toggle-block {
     background-position: center -288px;
-    background: url(../../assets/toggle-base.png) center -480px no-repeat;
+    background: url(~assets/toggle-base.png) center -480px no-repeat;
     position: relative;
 
     .iMore-toggle-btn {
-      background: url(../../assets/toggle-base.png) -653px -79px no-repeat;
+      background: url(~assets/toggle-base.png) -653px -79px no-repeat;
       width: 94px;
       height: 30px;
       line-height: 22px;
@@ -71,14 +71,14 @@
 
 
   .iMore-icon.iMore-icon-toggle-down {
-    background: url(../../assets/icons.png) -474px -732px no-repeat;
+    background: url(~assets/icons.png) -474px -732px no-repeat;
     width: 12px;
     height: 10px;
     cursor: pointer;
   }
 
   .iMore-icon.iMore-icon-toggle-up {
-    background: url(../../assets/icons.png) -473px -797px no-repeat;
+    background: url(~assets/icons.png) -473px -797px no-repeat;
     width: 12px;
     height: 10px;
     cursor: pointer;
@@ -89,7 +89,7 @@
     vertical-align: middle;
     width: 12px;
     height: 12px;
-    background: url(../../assets/icons.png) no-repeat;
+    background: url(~assets/icons.png) no-repeat;
   }
 
   .iMore-icon {
@@ -97,7 +97,7 @@
     vertical-align: middle;
     width: 12px;
     height: 12px;
-    background: url(../../assets/icons.png) no-repeat;
+    background: url(~assets/icons.png) no-repeat;
   }
   .cursor-pointer {
     cursor: pointer;
