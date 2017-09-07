@@ -90,7 +90,8 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    box-shadow: 0 0 2px #888;
+    box-shadow: 0 0 4px #c9c9ca;
+    border-radius: 2px;
     padding-bottom: .45em;
     overflow: hidden;
     /*min-width: 250px;*/
