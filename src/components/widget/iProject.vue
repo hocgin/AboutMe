@@ -38,7 +38,6 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
 
             &:hover {
                animation: 1s rubberBand forwards;
