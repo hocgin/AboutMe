@@ -22,7 +22,10 @@
         type: String,
         default: '#'
       },
-      _target: String
+      _target: {
+          type: String,
+          default: '_blank'
+      }
     }
   }
 </script>
